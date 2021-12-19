@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:animateLayoutChanges="false"
+    android:background="#0288D1"
+    tools:context=".splashscreen">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="213dp"
+        android:layout_height="114dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:onClick="btn1Implicit"
+        android:text="IMPLICIT "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="213dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:onClick="btn2Explicit"
+        android:text="EXPLICIT "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
